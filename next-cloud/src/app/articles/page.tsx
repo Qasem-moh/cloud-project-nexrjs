@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Article } from "@/utils/type";
 
 const articlesPage = async () => {
-  const articles = await fetch("https://jsonplaceholder.typicode.com/phihosts");
+  const articles = await fetch("https://jsonplaceholder.typicode.com/posts");
 
   if (!articles.ok) {
     throw new Error("Failed to fetch data");
