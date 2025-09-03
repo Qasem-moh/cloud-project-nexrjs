@@ -1,11 +1,22 @@
+import Hero from "@/components/home/Hero";
+import WebHostingPlan from "@/components/home/WebHostingPlan";
 
 
 export default function Home() {
   return (
-     
-    <div>
-      <h1>Welcome to the Cloud Hosting Platform</h1>
-      <p>Explore our services and features.</p>
-    </div>
+
+    <section>
+      <Hero />
+      <h2 className="text-center mt-10 text-3xl font-bold">
+        choose your web hosting plan
+      </h2>
+      <div className="container m-auto flex justify-center items-center
+      my-7 flex-wrap md:gap-7">
+        <WebHostingPlan />
+        <WebHostingPlan />
+        <WebHostingPlan />
+      </div>
+
+    </section>
   );
 }
